@@ -14,7 +14,7 @@ public class EnemyMovement : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
 
         // Zoek de XR Rig met de tag "Player"
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        GameObject player = GameObject.FindGameObjectWithTag("CastleBase");
         if (player != null)
         {
             playerTransform = player.transform;
