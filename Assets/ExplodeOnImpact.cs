@@ -12,7 +12,7 @@ public class ExplodeOnImpact : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy")) // Zorg dat vijanden de tag "Enemy" hebben
         {
 
-            collision.gameObject.GetComponent<Health>().TakeDamage(50);
+            collision.gameObject.GetComponent<Health>().TakeDamage(100);
             Explode();
             Destroy(gameObject); // Verwijder het object na de explosie
         }
