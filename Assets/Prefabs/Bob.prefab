@@ -78,6 +78,7 @@ MonoBehaviour:
   maxHealth: 100
   currentHealth: 0
   healthbarFill: {fileID: 7095094405908711630}
+  Bob: {fileID: 2536266092961454878}
 --- !u!95 &7435828491164584636
 Animator:
   serializedVersion: 5
@@ -172,6 +173,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7c4a89f7cbce6c458b7dc77569f1dec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageAmount: 10
+  attackCooldown: 2
 --- !u!1 &6554440274505405202
 GameObject:
   m_ObjectHideFlags: 0
