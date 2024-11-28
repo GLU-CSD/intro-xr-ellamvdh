@@ -9,6 +9,8 @@ TagManager:
   - Terrain
   - CastleBase
   - Spawner
+  - BOMBSTOTHROW
+  - sword
   layers:
   - Default
   - TransparentFX

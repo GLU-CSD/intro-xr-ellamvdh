@@ -14,7 +14,11 @@ public class ExplodeOnImpact : MonoBehaviour
 
             collision.gameObject.GetComponent<Health>().TakeDamage(100);
             Explode();
-            Destroy(gameObject); // Verwijder het object na de explosie
+
+            if (this.CompareTag("BOMBSTOTHROW"))
+            {
+                Destroy(gameObject); // Verwijder het object na de explosie
+            }
         }
     }
 
