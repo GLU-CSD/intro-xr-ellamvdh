@@ -32,3 +32,6 @@ public class spawnBombs : MonoBehaviour
         Instantiate(Bombs, BombsTransform.position, BombsTransform.rotation);
     }
 }
+
+
+

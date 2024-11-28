@@ -10,20 +10,25 @@ public class Health : MonoBehaviour
     public float currentHealth; //huidige waarde van health bijhoudt
     public Image healthbarFill; //reference naar de image van de healthbar
 
-    public GameObject Bob;
+    private GameObject Bob;
 
     // Start is called before the first frame update
     void Start()
     {
         currentHealth = maxHealth;
         UpdateHeathBar();
+        Bob = GameObject.FindGameObjectWithTag("Enemy");
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(currentHealth <=0 ){
-            Bob.SetActive(false);
+        if(Bob != null)
+        {
+            if(currentHealth <= 0)
+            {
+                Destroy(gameObject, 1f);
+            }
         }
     }
 
